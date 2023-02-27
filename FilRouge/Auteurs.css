@@ -1,0 +1,239 @@
+    /* a:hover {
+        color: red;
+    } */
+
+    /* En tete */
+    header {
+        background-color: #68a9ed;
+        display: flex;
+        justify-content: space-between;
+        max-height: 5%;
+        margin: 0px;
+    }
+
+    header h1 {
+        font-size: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    .headersection{
+        margin-top: 0%;
+        min-height: 100%;
+        margin-right: 0%;
+    }
+
+    .header{
+        width: 80%;
+    }
+
+    
+
+    .menu1 {
+        margin-left: 20%;
+        margin-right: 10%;
+    }
+
+    header nav ul {
+        display: flex;
+        align-content: space-between;
+        list-style-type: none;
+        justify-content: end;
+        align-items: baseline;
+    }
+
+
+
+    nav li {
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-bottom: 10px;
+        font-size: 25px;
+        display: flex;
+    }
+
+    header figure {
+        display: block;
+    }
+    @media screen and (min-width: 1000px) {
+        .menu {
+        margin-top: 5%;
+        border: solid #5182b5 2px;
+        background-color: aliceblue;
+        max-width: 15%;
+        margin-left: 5%;
+        max-height: 700px;
+        position: relative;
+        border-radius: 20px;
+        display: block;
+        align-items: flex-start;
+        min-width: 15%;
+        flex-wrap: wrap;
+        /*position: fixed ;*/
+    }
+        /*article{
+            margin-left: 20%;
+        }*/
+    }
+
+
+    @media screen and (max-width: 999.99px) {
+        .menu {
+            margin-top: 5%;
+            border: solid #5182b5 2px;
+            background-color: aliceblue;
+            max-width: 100%;
+            margin: 5%;
+            max-height: 700px;
+            border-radius: 20px;
+            display: block;
+            align-items: flex-start;
+            min-width: 15%;
+            flex-wrap: wrap;
+        }}
+
+
+
+    @media screen and (min-width: 1000px) {
+    .menu2 {
+        display: block;
+        position: relative;
+        right: 60px;
+        /*border: solid red 2px;*/
+        max-height: 600px;
+        overflow: scroll;
+        position: relative;
+        right: 2em;
+        text-align: start;
+        list-style: none;
+
+
+    }}
+
+    @media screen and (max-width: 999.99px) {
+    .menu2{   
+        display: block;
+        overflow: scroll;
+        max-height: 400px;
+    }
+    }
+
+
+ /*Change l'affichage des blocks */
+
+    @media screen and (min-width: 1000px) {
+        .tous {
+            display: flex;
+        }
+
+
+    }
+
+    @media screen and (max-width: 999.99px) {
+        .tous {
+            display: column;
+        }
+
+    }
+
+
+
+    article {
+        display: block;
+        flex-direction: column;
+    }
+
+    section {
+        border: solid 3px black;
+        margin-top: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 10px;
+        padding: 50px;
+        background-color: #9aa3a7;
+    }
+
+    h1 {
+        size: 100px;
+        font-style: bold;
+        text-align: center;
+        color: white;
+    }
+
+    h2 {
+        size: 30px;
+        font-style: bold;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    body {
+        display: block;
+        background-color: #040f13;
+    }
+
+    .bio {
+        border: solid 1px black;
+        box-shadow: 2px 2px 2px black;
+        max-height: 200px;
+        text-align: justify;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #bee0ec;
+        font-style: italic;
+        overflow: scroll;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    .photo img {
+        max-height: 550px;
+        max-width:  60%;
+    }
+
+    aside {
+        margin-bottom: 50px;
+    }
+
+    /*Partie JS*/
+    .hidden{
+        visibility: hidden;
+        display: none;
+    } 
+    .pasDeLivre{
+        visibility: hidden;
+        display:none;
+    }
+
+
+    /* bouton pour remonter */
+    #remonter {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    /* footer */
+
+    footer {
+        background-color: #68a9ed;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /*Pagination*/
+    .page
+    {
+        background-color: #9aa3a7;
+        border: solid #040f13 2px;
+        display: flex;
+        justify-content: center;
+        /*max-width: 30%;*/
+        align-items: center;
+    }
