@@ -1,0 +1,76 @@
+ La première étape pour faire fonctionner Livre pas Cher est de télécharger le logiciel  xampp  et GIT.
+Télécharger xampp : https://www.apachefriends.org/fr/download.html
+
+Installer xamp (linux) : https://doc.ubuntu-fr.org/xampp
+
+télécharger git : https://git-scm.com/downloads
+
+installer git (linux) :  https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git
+
+
+
+Une fois ces deux logiciels installés il va falloir importer le projet.
+
+Dans les fichiers de votre ordinateur vous devez trouver le dossier OPT. Dans ce dossier vous trouverez le dossier lampp.
+
+A l'intérieur de lampp cherchez le dossier HTDOCS.
+
+Une fois dans htdocs faites un clique droit dans le fond du dossier et choisissez :"ouvrir le terminal" .
+
+En faisant ça vous exécuterez des commandes directement dans HTDOCS.
+
+
+
+Pour importer le projet rendez vous sur :  https://git.uha4point0.fr/UHA40/fils-rouges-2022/4.0.1/guillaume-riedlinger-filrouge/-/tree/PRO401.11
+
+
+
+Vous avez deux façon pour importer le projet :
+
+1) téléchargez le projet au format zip et utiliser la commande extraire pour extraire le dossier dans HTDOCS.
+
+2) Cliquez sur l'icone clone en bleue sur la page git. Clonez le projet au format ssh (attention il vous faudra configurer une clé ssh aupravant).
+
+Depuis la ligne de commande ouverte depuis HTDOCS tapez: "git clone"  et faites un clique droit ; coller (pour coller le liens ssh que vous venez de récuprer sur gitlab) .
+
+
+
+Le projet est désormais installé dans vos fichiers.
+
+Le nom du dossier sera  "guillaume-riedlinger-filrouge" il va falloir le renommer  en "FilRouge".
+
+Ouvrez votre éditeur de code et sélectionnez le fichier FilRouge.
+
+
+
+Ouvrez un nouveau terminal depuis votre bureau. (vous pouvez fermer le précédent )
+
+tapez la commande suivante :
+
+sudo /opt/lampp/manager-linux-x64.run
+
+Cette commande va lancer l'application xampp. Dans l'application lancez MYSQL database et APACHE web server.
+
+
+
+La première étape une fois démarrés et d'initialisé la connexion à la base de donnée, pour cela rendez vous dans le fichier IndentifiantDB.php, dans ce fichier il va falloir changé les valeurs des variables $user et $password en renseignant vos information personnel de connexion avec phpmyadmin.
+
+
+
+Une fois cela fait, il faut ce rendre sur la page http://localhost/FilRouge/reset.php cela va initialisé toute la base de données et les différentes tables.
+
+Cela créera automatiquement un profil Admin avec  comme identifiant: Admin et mot de passe: Admin.
+
+
+
+Il faut être connecté en tant qu'Admin pour avoir accès au bouton reset bdd dans la page ajout de formulaire.
+
+
+
+
+
+
+
+Le site est désormais opérationnel.
+
+Vous pouvez ajouter et supprimer des commentaires sur les différents livres proposé par le site.
